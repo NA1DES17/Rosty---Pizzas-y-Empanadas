@@ -1,0 +1,597 @@
+:root {
+  --bgcBody: #ece6da;
+  --othBgc: #ffefca;
+  --bgcTarjeta: hsl(0, 0%, 100%);
+  --colorP: hsl(228, 12%, 48%);
+  /* ---------- */
+  --colorHeader2: #f9a38698;
+  --colorHeader: #f9a386;
+  --colorBackground: #ecd8bc;
+  --CTA: #f45924;
+  --beneficios: #0cb9f36f;
+  --colorTexto: #212121;
+  --backgroundGaleria: #fbe5b3;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  display: flex;
+  background-color: var(--bgcBody);
+  justify-content: center;
+}
+/* ---------Header--------- */
+#sticky {
+  background-color: var(--colorHeader);
+  position: fixed;
+  top: 0;
+  left: 10;
+  width: 93.5vw;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  transition: 0.7s;
+  padding: 30px 20px;
+  z-index: 10;
+  border-radius: 0px 0px 16px 16px; /*UL UR DR DL*/
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  font-family: "Fraunces", serif;
+}
+#sticky .logo {
+  position: relative;
+  font-size: 2em;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  color: var(--colorTexto);
+  text-decoration: none;
+  /* font-family: "Playwrite AR", cursive; */
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  /* border: solid 1px red; */
+  width: 32vw;
+  height: 32vw;
+  max-width: 95px;
+  max-height: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  margin-left: 26vw;
+}
+#sticky .logo #nombreEmpresa {
+  font-size: 64px;
+  margin-left: 2vw;
+}
+#sticky.abajo .logo #nombreEmpresa {
+  font-size: 32px;
+}
+#sticky.abajo {
+  background-color: var(--colorHeader2);
+  padding: 15px 20px;
+  padding: 15px;
+  height: 20px;
+  width: 93vw;
+}
+#sticky .logo img {
+  width: 32vw;
+  max-width: 95px;
+  max-height: 95px;
+}
+#sticky.abajo .logo {
+  width: 8vw;
+  height: 8vw;
+}
+#sticky.abajo .logo img {
+  width: 8vw;
+  height: 8vw;
+}
+/*------------*/
+/* Estilos básicos para el body y el nav */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin-left: 24vw;
+}
+/* Ocultar menú en pantallas pequeñas */
+.nav-links {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav-links li {
+  margin: 0.5rem 0;
+}
+.nav-links li a {
+  color: var(--colorTexto); /*Color texto dentro del menú*/
+  text-decoration: none;
+  font-size: 24px;
+}
+/* Estilos para el ícono del menú hamburguesa */
+.menu-icon {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+.menu-icon span {
+  background-color: #212121;
+  height: 3px;
+  border-radius: 5px;
+  width: 100%;
+  transition: 0.3s;
+}
+/* Mostrar menú cuando esté activo */
+.nav-links.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: whitesmoke;
+  padding: 1rem;
+  border-radius: 16px;
+  margin-top: 0.5rem;
+  /* ---- */
+  width: 30vw;
+  height: 20vh;
+}
+/* ---------Header--------- */
+.contenedor {
+  background-color: var(--colorBackground);
+  background-image: url(src/icons8-pizza-50.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px 12px 0px 0px;
+  margin-top: 105px;
+  width: 97%;
+}
+.tarjeta {
+  font-family: "Fraunces", serif;
+  border: solid 0.5px #ffbc42;
+  box-shadow: 0 0.625rem 0.1875rem rgba(0, 0, 0, 0.12),
+    0 0.625rem 0.125px rgba(0, 0, 0, 0.24);
+  border-radius: 10px;
+  width: 90vw;
+  height: 635px;
+  margin: 10px;
+  background-color: var(--bgcTarjeta);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* ------------------Estilos index------------------ */
+/* ---------Main Fold--------- */
+#mainFold {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95vw;
+}
+#mainFold h1 {
+  text-align: center;
+  padding: 10px;
+}
+#mainFold p {
+  padding: 10px;
+  text-align: center;
+}
+.cta {
+  background-color: var(--CTA);
+  border: none;
+  height: 60px;
+  width: 213px;
+  border-radius: 4px;
+  margin: 70px;
+}
+.cta:hover {
+  transform: scale(1.1);
+}
+.cta a {
+  text-decoration: none;
+  color: var(--colorTexto);
+  padding: 10px;
+}
+.videoContainer {
+  width: 94vw;
+  height: 54vw;
+  max-width: 804px;
+  max-height: 452px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fbe5b3;
+}
+/* ---------galeria--------- */
+.galeria {
+  width: 94vw;
+  height: 80vw;
+  max-width: 804px;
+  max-height: 452px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #fbe5b3; */
+  background-color: #f7e3b3ac;
+}
+.imgPrincipal {
+  margin-bottom: 4vh;
+  border-radius: 12px;
+  /* box-shadow: 2px 2px 35px 2px rgba(255, 188, 66, 1); */
+}
+.opciones {
+  display: flex;
+  flex-direction: row;
+}
+.op {
+  width: 14vw;
+  height: 14vw;
+  margin: 0px 0.5vw;
+  border-radius: 12px;
+  border: none;
+}
+.imgOpc {
+  width: 14vw;
+  height: 14vw;
+  border-radius: 12px;
+}
+.op:hover {
+  transform: scale(1.05);
+  /* box-shadow: 1px 1px 32px 1px rgba(255, 188, 66, 1); */
+}
+/*------------------------------------------*/
+/* Estilos para la imagen seleccionada */
+.selected {
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+  box-shadow: 0 0 10px rgba(255, 188, 66, 1); /* Agrega un efecto de sombra azul */
+}
+.selected::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5); /* Capa semi-transparente */
+  border-radius: 12px; /* Mantén el borde redondeado */
+  pointer-events: none; /* Permite que la imagen aún sea clickeable */
+}
+/* ---------galeria--------- */
+/* ---------Main Fold--------- */
+/* ---------Beneficios--------- */
+#benefits {
+  display: flex;
+  flex-direction: column;
+  width: 95vw;
+  margin: 20px;
+  max-height: 452px;
+  /* border: 1px solid red; */
+  align-items: center;
+}
+#benefits h2 {
+  text-align: center;
+  margin-bottom: 3vh;
+}
+iframe {
+  width: 85vw;
+  border-radius: 16px;
+  margin-bottom: 1.5vh;
+}
+#benefits h4 {
+  text-align: center;
+}
+/*ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.beneficios {
+  display: flex;
+  list-style-type: none;
+   background-color: #b2dfdb; 
+  background-color: var(--beneficios);
+  margin: 12px;
+  width: 33vw;
+  height: 33vw;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 4px;
+}*/
+/* ---------Beneficios--------- */
+/* ---------How to Works--------- */
+#howToWorks {
+  width: 95vw;
+  /* margin-bottom: 12px; */
+  margin-bottom: 4vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#howToWorks h2 {
+  margin: 12px;
+  margin-bottom: 3vh;
+}
+/* ---------How to Works--------- */
+/* ---------Opiniones--------- */
+#testimonials {
+  width: 90vw;
+}
+#testimonials h2 {
+  margin: 3vh;
+}
+
+.testimonialContainer {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.opinion {
+  width: 100%;
+  flex-shrink: 0;
+  border-radius: 12px;
+}
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.151);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+button:focus {
+  outline: none;
+}
+/* ---------Opiniones--------- */
+/* ---------Preg. Frecuents--------- */
+#faq {
+  /* border: solid 1px red; */
+  width: 95vw;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+/* Acordeon */
+.acordeon {
+  width: 90vw;
+  /* margin: 90px auto; */
+  color: black;
+  /* background-color: var(--colorBackground); */
+  background-color: transparent;
+
+  /* padding: 45px 45px; */
+  /* border: solid 1px greenyellow; */
+}
+.acordeon-cuerpo h2 {
+  margin-top: 64px;
+  font-size: 36px;
+}
+.acordeon .contenedor-acordeon {
+  position: relative;
+  margin: 10px 10px;
+  /* border: solid 1px violet; */
+  max-height: 48px;
+}
+/* Posiciona las etiquetas en relación con el contenedor. Añade relleno en la parte superior e inferior y aumenta el tamaño de la fuente. También hace que su cursor sea un puntero */
+.acordeon .etiqueta {
+  position: relative;
+  padding: 10px 0;
+  font-size: 24px;
+  color: var(--colorTexto);
+  cursor: pointer;
+}
+/* Posiciona el signo más a 5px de la derecha. Lo centra utilizando la propiedad transform. */
+.acordeon .etiqueta::before {
+  content: "+";
+  color: black;
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  font-size: 30px;
+  transform: translateY(-50%);
+}
+/* Oculta el contenido (altura: 0), disminuye el tamaño de la fuente, justifica el texto y añade la transición */
+.acordeon .contenido {
+  position: relative;
+  /* background: var(--colorBackground); */
+  background: transparent;
+  height: 0;
+  font-size: 20px;
+  text-align: center;
+  width: 80vw;
+  overflow: hidden;
+  transition: 0.5s;
+  /* border: solid 1px red;*/
+}
+/* Añade una línea horizontal entre los contenidos */
+.acordeon hr {
+  width: 100;
+  margin-left: 0;
+  border: 1px solid grey;
+}
+.acordeon .contenedor-acordeon.activa .etiqueta {
+  font-weight: bold;
+}
+/* Muestra la parte de contenido cuando está activa. Establece la altura */
+.acordeon .contenedor-acordeon.activa .contenido {
+  /* height: 150px; */
+  height: auto;
+  /* padding-top: 6vw; */
+}
+/* Cambia de signo positivo a negativo una vez activado */
+.acordeon .contenedor-acordeon.activa .etiqueta::before {
+  content: "-";
+  font-size: 30px;
+}
+/* Acordeon */
+/* ---------Preg. Frecuents--------- */
+
+/* ---------Footer--------- */
+footer {
+  border-top: 2px solid #b2dfdb36;
+  padding-top: 2%;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 5%;
+  /* margin-top: 5%; */
+  letter-spacing: 6px;
+  width: 88vw;
+}
+/* ---------Footer--------- */
+@media (min-width: 768px) {
+  footer {
+    margin: 1%;
+  }
+  #sticky .logo {
+    position: relative;
+    font-size: 2em;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    color: #212121;
+    text-decoration: none;
+    /* font-family: "Playwrite AR", cursive; */
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    /* border: solid 1px red; */
+    width: 12.3vw;
+    height: 12.3vw;
+    max-width: 92px;
+    max-height: 92px;
+    margin-left: 1vw;
+  }
+  #sticky.abajo {
+    background-color: var(--colorHeader2);
+    padding: 15px 20px;
+    padding: 15px;
+    height: 20px;
+    width: 93vw;
+  }
+  #sticky .logo img {
+    width: 12.3vw;
+    max-width: 92px;
+    max-height: 92px;
+  }
+  #sticky.abajo .logo {
+    width: 12vw;
+    height: 12vw;
+    max-width: 50px;
+    max-height: 50px;
+  }
+  #sticky.abajo .logo img {
+    width: 12vw;
+    height: 12vw;
+    max-width: 50px;
+    max-height: 50px;
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+  }
+  .nav-links li {
+    margin: 0 1rem;
+  }
+  .nav-links li a {
+    color: var(--colorTexto); /*Color texto dentro del menú*/
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .menu-icon {
+    display: none;
+  }
+  #mainFold h1 {
+    font-size: 2.5rem;
+    color: var(--colorTexto);
+  }
+  #mainFold p {
+    /* border: solid 1px red; */
+    width: 80vw;
+    font-size: 24px;
+    text-align: center;
+    color: var(--colorTexto);
+  }
+  #benefits {
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    margin: 20px;
+    max-height: 452px;
+    align-items: center;
+  }
+  .beneficios {
+    display: flex;
+    list-style-type: none;
+    margin: 12px;
+    width: 20vw;
+    height: 20vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 4px;
+  }
+  /* ---------galeria--------- */
+  .galeria {
+    width: 94vw;
+    height: 80vw;
+    max-width: 804px;
+    max-height: 452px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+  }
+  .imgPrincipal {
+    width: 40vw;
+    margin-bottom: 4vh;
+    border-radius: 12px;
+  }
+  .opciones {
+    display: flex;
+    flex-direction: row;
+  }
+  .op {
+    width: 8vw;
+    height: 8vw;
+    margin: 0px 1vw;
+    border-radius: 12px;
+  }
+  .imgOpc {
+    width: 8vw;
+    height: 8vw;
+    border-radius: 12px;
+  }
+  /* ---------galeria--------- */
+}
+/* ------------------Estilos index------------------ */

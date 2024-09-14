@@ -148,7 +148,7 @@ body {
 /* ---------Header--------- */
 .contenedor {
   background-color: var(--colorBackground);
-  background-image: url(src/icons8-pizza-50.png);
+  background-image: url(src/iconos/icons8-pizza-50.png);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -242,13 +242,13 @@ body {
 .plus {
   width: 5vw;
   height: 5vw;
-  background-image: url("src/icons8-más-64.png"); /*Pasar archivos del otro src*/
+  background-image: url("src/iconos/icons8-más-64.png"); /*Pasar archivos del otro src*/
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.8));
 }
 .del {
   width: 5vw;
   height: 5vw;
-  background-image: url("src/icons8-borrar-para-siempre-64.png"); /*Pasar archivos del otro src*/
+  background-image: url("src/iconos/icons8-borrar-para-siempre-64.png"); /*Pasar archivos del otro src*/
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.8));
 }
 .display {

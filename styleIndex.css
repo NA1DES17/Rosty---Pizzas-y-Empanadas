@@ -156,7 +156,7 @@ body {
   margin-top: 105px;
   width: 97%;
 }
-/* .tarjeta {
+.tarjeta {
   font-family: "Fraunces", serif;
   border: solid 0.5px #ffbc42;
   box-shadow: 0 0.625rem 0.1875rem rgba(0, 0, 0, 0.12),
@@ -170,7 +170,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-} */
+}
 /* ------------------Estilos index------------------ */
 /* ---------Main Fold--------- */
 #mainFold {
@@ -342,7 +342,7 @@ iframe {
   margin: auto;
   overflow: hidden;
 }
-.slider {
+/* .slider {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
@@ -370,7 +370,7 @@ iframe {
 }
 button:focus {
   outline: none;
-}
+} */
 /* ---------Opiniones--------- */
 /* ---------Preg. Frecuents--------- */
 #faq {
@@ -382,32 +382,32 @@ button:focus {
   align-items: center;
 }
 /* Acordeon */
+/* Establece el ancho del acordeón. Establece el margen a 90px en la parte superior e inferior y auto a la izquierda y derecha */
 .acordeon {
   width: 90vw;
   /* margin: 90px auto; */
   color: black;
-  /* background-color: var(--colorBackground); */
   background-color: transparent;
-
   /* padding: 45px 45px; */
   /* border: solid 1px greenyellow; */
 }
 .acordeon-cuerpo h2 {
-  margin-top: 64px;
+  margin-top: 32px;
   font-size: 36px;
 }
 .acordeon .contenedor-acordeon {
   position: relative;
   margin: 10px 10px;
   /* border: solid 1px violet; */
-  max-height: 48px;
+  /* max-height: min-content; */
 }
+
 /* Posiciona las etiquetas en relación con el contenedor. Añade relleno en la parte superior e inferior y aumenta el tamaño de la fuente. También hace que su cursor sea un puntero */
 .acordeon .etiqueta {
   position: relative;
   padding: 10px 0;
   font-size: 24px;
-  color: var(--colorTexto);
+  color: black;
   cursor: pointer;
 }
 /* Posiciona el signo más a 5px de la derecha. Lo centra utilizando la propiedad transform. */
@@ -423,7 +423,6 @@ button:focus {
 /* Oculta el contenido (altura: 0), disminuye el tamaño de la fuente, justifica el texto y añade la transición */
 .acordeon .contenido {
   position: relative;
-  /* background: var(--colorBackground); */
   background: transparent;
   height: 0;
   font-size: 20px;
@@ -431,7 +430,7 @@ button:focus {
   width: 80vw;
   overflow: hidden;
   transition: 0.5s;
-  /* border: solid 1px red;*/
+  /* border: solid 1px red; */
 }
 /* Añade una línea horizontal entre los contenidos */
 .acordeon hr {

@@ -27,21 +27,21 @@ document.addEventListener("DOMContentLoaded", () => {
   const titulos = document.querySelectorAll(".title");
   //Iteramos sobre los <h2> TITLE para agregar el titulo
   for (let i = 0; i < titulos.length; i++) {
-    titulos[i].innerHTML = listaBudines[i].sabor;
+    titulos[i].innerHTML = listaProductos[i].sabor;
   }
 
   //Seleccionamos todos los <p> de PRICE
   const precios = document.querySelectorAll(".price");
   //Iteramos sobre los <p> PRICE para agregar el precio
   for (let i = 0; i < precios.length; i++) {
-    precios[i].innerHTML = listaBudines[i].precio;
+    precios[i].innerHTML = listaProductos[i].precio;
   }
 
   //Seleccionamos todos los <p> de DESCRIPTION
   const descripciones = document.querySelectorAll(".description");
   //Iteramos sobre los <p> DESCRIPTION para agregar el precio
   for (let i = 0; i < precios.length; i++) {
-    descripciones[i].innerHTML = listaBudines[i].descripción;
+    descripciones[i].innerHTML = listaProductos[i].descripción;
   }
 
   // Seleccionamos todos los contenedores de TARJETAS
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const display = tarjeta.querySelector(".display");
       const cantidad = parseInt(display.value);
       const precio = parseFloat(
-        listaBudines[index].precio.replace(/[^0-9.-]+/g, "")
+        listaProductos[index].precio.replace(/[^0-9.-]+/g, "")
       ); // Convertir el precio a número
 
       if (cantidad > 0) {
@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const cantidad = display.value;
 
       if (cantidad > 0) {
-        const sabor = listaBudines[index].sabor;
+        const sabor = listaProductos[index].sabor;
         mensaje += `- ${sabor}: ${cantidad}\n<br>`;
         mensajeWp += `- ${sabor}: ${cantidad}\n`;
       }
@@ -179,7 +179,7 @@ const jamonYmorrones = new Producto(
   "El budín de jamonYmorrones es un tipo de postre con sabor a jamonYmorrones parecido a un pastel."
 );
 
-const listaBudines = [
+const listaProductos = [
   prePizzaTomate,
   prePizzaCebolla,
   pizzetas,

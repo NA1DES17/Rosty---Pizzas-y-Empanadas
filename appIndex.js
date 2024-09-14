@@ -5,7 +5,9 @@ for (i = 0; i < acordeon.length; i++) {
     this.classList.toggle("activa");
   });
 }
+//------------------
 
+//------------------
 //--------------Menú hamburguesa---------------
 document.getElementById("menu-icon").addEventListener("click", function () {
   const navLinks = document.getElementById("nav-links");
@@ -22,31 +24,6 @@ window.addEventListener("scroll", function () {
   main.classList.toggle("abajo", this.window.scrollY > 0);
 });
 // --------------Sticky header---------------
-
-// --------------Slider---------------
-let slideIndex = 0;
-
-function showSlide(index) {
-  const slides = document.querySelectorAll(".opinion");
-  const slider = document.querySelector(".slider");
-  const totalSlides = slides.length;
-
-  if (index >= totalSlides) {
-    slideIndex = 0;
-  } else if (index < 0) {
-    slideIndex = totalSlides - 1;
-  } else {
-    slideIndex = index;
-  }
-  const offset = -slideIndex * 100;
-  slider.style.transform = `translateX(${offset}%)`;
-}
-function moveSlide(step) {
-  showSlide(slideIndex + step);
-}
-// Muestra el primer slide
-showSlide(slideIndex);
-// --------------Slider---------------
 
 // --------------Galeria---------------
 document.addEventListener("DOMContentLoaded", function () {

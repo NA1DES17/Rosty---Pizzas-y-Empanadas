@@ -151,32 +151,32 @@ document.addEventListener("DOMContentLoaded", () => {
 const prePizzaTomate = new Producto(
   "Pre-pizza de tomate",
   "$1000.00",
-  "Pizza precocida con tomate arriba lista para calentar y comer."
+  "Base crujiente con una capa de salsa de tomate casera. Lista para agregar tus ingredientes favoritos."
 );
 const prePizzaCebolla = new Producto(
   "Pre-pizza de Cebolla",
   "$1200.00",
-  "Pizza precocida con cebolla congelada arriba lista para calentar y comer."
+  "Deliciosa base con cebolla dorada, perfecta para personalizar tu pizza en casa."
 );
 const pizzetas = new Producto(
   "Pizzetas",
   "$1000.00",
-  "El budín de pizzetas es la receta tradicional del budín saborizado con pizzetas."
+  "Mini pizzas listas para disfrutar con salsa de tomate, ideales para añadir tus ingredientes preferidos."
 );
 const pizzetasCMuzza = new Producto(
   "Pizzetas c/muzza",
   "$1500.00",
-  "El budín inglés o <em>plum cake</em> es un bizcocho hecho con frutos secos, frutas confitadas y algun tipo de licor."
+  "Pequeñas pizzas con muzzarella gratinada, perfectas para un snack rápido y sabroso."
 );
 const muzzarella = new Producto(
   "Pizza de Muzzarella",
   "$5500.00",
-  "El budín muzzarella se caracteriza por ser bicolor, generalmente es combinado de chocolate y prePizzaTomate."
+  "Tradicional pizza con abundante muzzarella derretida sobre una base crujiente. Ideal para compartir."
 );
 const jamonYmorrones = new Producto(
   "Pizza de jamón y morrones",
   "$8000.00",
-  "El budín de jamonYmorrones es un tipo de postre con sabor a jamonYmorrones parecido a un pastel."
+  " Exquisita pizza con jamón y morrones asados, una combinación clásica con muzzarella."
 );
 
 const listaProductos = [

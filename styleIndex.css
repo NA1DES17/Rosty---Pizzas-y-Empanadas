@@ -143,7 +143,7 @@ body {
   margin-top: 0.5rem;
   /* ---- */
   width: 30vw;
-  height: 20vh;
+  height: 25vh;
 }
 /* ---------Header--------- */
 .contenedor {
@@ -488,7 +488,7 @@ footer {
     height: 12.3vw;
     max-width: 92px;
     max-height: 92px;
-    margin-left: 1vw;
+    margin-left: 1.5vw;
   }
   #sticky.abajo {
     background-color: var(--colorHeader2);

@@ -178,6 +178,26 @@ const jamonYmorrones = new Producto(
   "$8000.00",
   " Exquisita pizza con jamón y morrones asados, una combinación clásica con muzzarella."
 );
+const empCarneHorno = new Producto(
+  "Empanada de Carne al horno",
+  "$700.00",
+  "Descripción para una empanada de carne."
+);
+const empJyQ = new Producto(
+  "Empanada de jamón y queso",
+  "$700.00",
+  "Descripción para una empanada de jamón y queso."
+);
+const empPolloHorno = new Producto(
+  "Empanada de pollo al horno",
+  "$700.00",
+  "Descripción para una empanada de pollo."
+);
+const tostado = new Producto(
+  "Tostado de jamón y queso.",
+  "$2500.00",
+  "Descripción para un tostado de jamón y queso."
+);
 
 const listaProductos = [
   prePizzaTomate,
@@ -186,5 +206,9 @@ const listaProductos = [
   pizzetasCMuzza,
   muzzarella,
   jamonYmorrones,
+  empCarneHorno,
+  empJyQ,
+  empPolloHorno,
+  tostado,
 ];
 const valores = [];

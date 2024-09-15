@@ -202,7 +202,9 @@ body {
 .cta a {
   text-decoration: none;
   color: var(--colorTexto);
-  padding: 10px;
+  padding: 21px 55px;
+  height: 60px;
+  width: 213px;
 }
 .videoContainer {
   width: 94vw;

@@ -183,6 +183,11 @@ const empCarneHorno = new Producto(
   "$700.00",
   "Descripción para una empanada de carne."
 );
+const empCarneFrita = new Producto(
+  "Empanada frita de Carne",
+  "$700.00",
+  "Descripción para una empanada de carne, pero frita."
+);
 const empJyQ = new Producto(
   "Empanada de jamón y queso",
   "$700.00",
@@ -210,5 +215,6 @@ const listaProductos = [
   empJyQ,
   empPolloHorno,
   tostado,
+  empCarneFrita,
 ];
 const valores = [];

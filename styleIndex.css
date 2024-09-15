@@ -443,7 +443,7 @@ footer {
     height: 12.3vw;
     max-width: 92px;
     max-height: 92px;
-    margin-left: 1.5vw;
+    margin-left: 2.5vw;
   }
   #sticky.abajo {
     background-color: var(--colorHeader2);
@@ -462,6 +462,7 @@ footer {
     height: 12vw;
     max-width: 50px;
     max-height: 50px;
+    margin-left: 2.7vw;
   }
   #sticky.abajo .logo img {
     width: 12vw;

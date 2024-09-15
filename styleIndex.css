@@ -231,6 +231,8 @@ body {
   margin-bottom: 4vh;
   border-radius: 12px;
   /* box-shadow: 2px 2px 35px 2px rgba(255, 188, 66, 1); */
+  max-width: 305px;
+  /* max-height: 227.3px; */
 }
 .opciones {
   display: flex;
@@ -526,6 +528,8 @@ footer {
     width: 40vw;
     margin-bottom: 4vh;
     border-radius: 12px;
+    max-width: 513px;
+    max-height: 288px;
   }
   .opciones {
     display: flex;

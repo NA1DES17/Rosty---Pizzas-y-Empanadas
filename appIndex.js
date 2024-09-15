@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const imgPrincipal = document.getElementById("imgPrincipal");
 
   // Configura la imagen principal inicial
-  imgPrincipal.src = "src/jyq.jpg";
+  imgPrincipal.src = "src/fotosPrueba/frita.jpg";
 
   // Añade el evento de clic a cada botón de la galería
   opButtons.forEach((button) => {
@@ -45,22 +45,22 @@ document.addEventListener("DOMContentLoaded", function () {
       // Actualizar la imagen principal según el valor del botón
       switch (button.value) {
         case "ingles":
-          imgPrincipal.src = "src/verd2.jpg";
+          imgPrincipal.src = "src/fotosPrueba/tortilla2.jpg";
           break;
         case "limon":
-          imgPrincipal.src = "src/jyq3.jpg";
+          imgPrincipal.src = "src/fotosPrueba/pastelDePapa.jpg";
           break;
         case "marmolado":
-          imgPrincipal.src = "src/verd.jpg";
+          imgPrincipal.src = "src/fotosPrueba/tortilla.jpg";
           break;
         case "naranja":
-          imgPrincipal.src = "src/tarta.jpg";
+          imgPrincipal.src = "src/fotosPrueba/pollo.jpg";
           break;
         case "vainilla":
-          imgPrincipal.src = "src/jyqAbierta.jpg";
+          imgPrincipal.src = "src/fotosPrueba/jyq.jpg";
           break;
         case "chocolate":
-          imgPrincipal.src = "src/jyq.jpg";
+          imgPrincipal.src = "src/fotosPrueba/frita.jpg";
           break;
       }
     });

@@ -29,6 +29,7 @@ window.addEventListener("scroll", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const opButtons = document.querySelectorAll(".op");
   const imgPrincipal = document.getElementById("imgPrincipal");
+  const botonFotoPrincipal = document.getElementById("botonFotoPrincipal");
 
   // Configura la imagen principal inicial
   imgPrincipal.src = "src/fotosPrueba/frita.jpg";
@@ -46,21 +47,27 @@ document.addEventListener("DOMContentLoaded", function () {
       switch (button.value) {
         case "ingles":
           imgPrincipal.src = "src/fotosPrueba/tortilla2.jpg";
+          botonFotoPrincipal.href = "pedidos.html";
           break;
         case "limon":
           imgPrincipal.src = "src/fotosPrueba/pastelDePapa.jpg";
+          botonFotoPrincipal.href = "pedidos.html";
           break;
         case "marmolado":
           imgPrincipal.src = "src/fotosPrueba/tortilla.jpg";
+          botonFotoPrincipal.href = "pedidos.html";
           break;
         case "naranja":
           imgPrincipal.src = "src/fotosPrueba/pollo.jpg";
+          botonFotoPrincipal.href = "pedidos.html#p9";
           break;
         case "vainilla":
           imgPrincipal.src = "src/fotosPrueba/jyq.jpg";
+          botonFotoPrincipal.href = "pedidos.html#p8";
           break;
         case "chocolate":
           imgPrincipal.src = "src/fotosPrueba/frita.jpg";
+          botonFotoPrincipal.href = "pedidos.html#p11";
           break;
       }
     });

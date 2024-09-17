@@ -5,7 +5,6 @@ document.getElementById("menu-icon").addEventListener("click", function () {
   const navLinks = document.getElementById("nav-links");
   navLinks.classList.toggle("active");
 });
-
 //--------------Menú hamburguesa---------------
 
 // --------------Sticky header---------------
@@ -16,11 +15,13 @@ window.addEventListener("scroll", function () {
   main.classList.toggle("abajo", this.window.scrollY > 0);
 });
 // --------------Sticky header---------------
+
 // --------------No doble click zoom---------------
 document.addEventListener("dblclick", function (event) {
   event.preventDefault();
 });
 // --------------No doble click zoom---------------
+
 // --------------Botones y display---------------
 document.addEventListener("DOMContentLoaded", () => {
   //Seleccionamos todos los <h2> de TITLE
@@ -151,17 +152,17 @@ document.addEventListener("DOMContentLoaded", () => {
 const prePizzaTomate = new Producto(
   "Pre-pizza de tomate",
   "$1000.00",
-  "Base crujiente con una capa de salsa de tomate casera. Lista para agregar tus ingredientes favoritos."
+  "Pizza cubierta c/tomate, pre cocinada lista para hornear y disfrutar."
 );
 const prePizzaTomateCMuzza = new Producto(
   "Pre-pizza de tomate c/ muzzarella",
   "$1000.00",
-  "Base crujiente con una capa de salsa de tomate casera y la mejor muzzarella."
+  "Pizza cubierta c/tomate y muzzarella, pre cocinada lista para hornear y disfrutar."
 );
 const prePizzaCebolla = new Producto(
   "Pre-pizza de Cebolla",
   "$1200.00",
-  "Deliciosa base con cebolla dorada, perfecta para personalizar tu pizza en casa."
+  "Pizza con cebolla, pre cocinada lista para hornear y disfrutar."
 );
 const pizzetas = new Producto(
   "Pizzetas",
@@ -171,12 +172,12 @@ const pizzetas = new Producto(
 const pizzetasCMuzza = new Producto(
   "Pizzetas c/muzza",
   "$1500.00",
-  "Pequeñas pizzas con muzzarella gratinada, perfectas para un snack rápido y sabroso."
+  "Mini pizzas listas para disfrutar con salsa de tomate, con la cantidad ideal de muzzarella."
 );
 const muzzarella = new Producto(
   "Pizza de Muzzarella",
   "$5500.00",
-  "Tradicional pizza con abundante muzzarella derretida sobre una base crujiente. Ideal para compartir."
+  "Tradicional pizza de muzzarella con aceitunas."
 );
 const jamonYmorrones = new Producto(
   "Pizza de jamón y morrones",
@@ -186,27 +187,27 @@ const jamonYmorrones = new Producto(
 const empCarneHorno = new Producto(
   "Empanada de Carne al horno",
   "$700.00",
-  "Descripción para una empanada de carne."
+  "Empanada de carne con abundante relleno, hechas con huevo y aceitunas.<br> Cocida al horno."
 );
 const empCarneFrita = new Producto(
   "Empanada frita de Carne",
   "$700.00",
-  "Descripción para una empanada de carne, pero frita."
+  "Empanada frita de carne con abundante relleno, hechas con huevo y aceitunas."
 );
 const empJyQ = new Producto(
   "Empanada de jamón y queso",
   "$700.00",
-  "Descripción para una empanada de jamón y queso."
+  "Clásicas empanadas rellenas de jamón, queso y muzzarella."
 );
 const empPolloHorno = new Producto(
   "Empanada de pollo al horno",
   "$700.00",
-  "Descripción para una empanada de pollo."
+  "Jugosa empanada de pollo al horno con abundante relleno."
 );
 const tostado = new Producto(
   "Tostado de jamón y queso.",
   "$2500.00",
-  "Descripción para un tostado de jamón y queso."
+  "Tostado caliente relleno de jamón y queso, hecho con pan casero."
 );
 
 const listaProductos = [

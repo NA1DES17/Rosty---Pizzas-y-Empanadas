@@ -59,15 +59,15 @@ document.addEventListener("DOMContentLoaded", function () {
           break;
         case "naranja":
           imgPrincipal.src = "src/fotosPrueba/pollo.jpg";
-          botonFotoPrincipal.href = "pedidos.html#p9";
+          botonFotoPrincipal.href = "pedidos.html#p11";
           break;
         case "vainilla":
           imgPrincipal.src = "src/fotosPrueba/jyq.jpg";
-          botonFotoPrincipal.href = "pedidos.html#p8";
+          botonFotoPrincipal.href = "pedidos.html#p10";
           break;
         case "chocolate":
           imgPrincipal.src = "src/fotosPrueba/frita.jpg";
-          botonFotoPrincipal.href = "pedidos.html#p11";
+          botonFotoPrincipal.href = "pedidos.html#p9";
           break;
       }
     });

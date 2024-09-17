@@ -156,7 +156,7 @@ const prePizzaTomate = new Producto(
 const prePizzaTomateCMuzza = new Producto(
   "Pre-pizza de tomate c/ muzzarella",
   "$1000.00",
-  "Base crujiente con una capa de salsa de tomate casera y la mejor muzzarella. Lista para meter al horno y disfrutar."
+  "Base crujiente con una capa de salsa de tomate casera y la mejor muzzarella. Lista hornear y disfrutar."
 );
 const prePizzaCebolla = new Producto(
   "Pre-pizza de Cebolla",

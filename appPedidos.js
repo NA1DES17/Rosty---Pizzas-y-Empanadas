@@ -153,6 +153,11 @@ const prePizzaTomate = new Producto(
   "$1000.00",
   "Base crujiente con una capa de salsa de tomate casera. Lista para agregar tus ingredientes favoritos."
 );
+const prePizzaTomateCMuzza = new Producto(
+  "Pre-pizza de tomate c/ muzzarella",
+  "$1000.00",
+  "Base crujiente con una capa de salsa de tomate casera y la mejor muzzarella. Lista para meter al horno y disfrutar."
+);
 const prePizzaCebolla = new Producto(
   "Pre-pizza de Cebolla",
   "$1200.00",
@@ -206,15 +211,16 @@ const tostado = new Producto(
 
 const listaProductos = [
   prePizzaTomate,
-  prePizzaCebolla,
+  prePizzaTomateCMuzza,
+  prePizzaCebolla, //falta foto
+  muzzarella, //falta foto
+  jamonYmorrones, //falta foto
   pizzetas,
   pizzetasCMuzza,
-  muzzarella,
-  jamonYmorrones,
   empCarneHorno,
+  empCarneFrita,
   empJyQ,
   empPolloHorno,
   tostado,
-  empCarneFrita,
 ];
 const valores = [];

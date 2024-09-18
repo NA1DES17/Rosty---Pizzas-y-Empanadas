@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
       enviarPedido.style.display = "flex";
       enviarPedido.addEventListener("click", () => {
         // Enviamos el pedido por WhatsApp
-        const urlWhatsApp = `https://api.whatsapp.com/send?phone=5491138561101&text=${mensajeCodificado}`;
+        const urlWhatsApp = `https://api.whatsapp.com/send?phone=5491131533709&text=${mensajeCodificado}`;
 
         alert("Pedido realizado\n(La página se recargará)");
         setTimeout(window.open(urlWhatsApp, "_blank"), 10000);
@@ -151,17 +151,13 @@ document.addEventListener("DOMContentLoaded", () => {
 // --------------Productos---------------
 const prePizzaTomate = new Producto(
   "Pre-pizza de tomate",
-  "$1000.00",
+  "$1200.00",
   "Pizza cubierta c/tomate, pre cocinada lista para hornear y disfrutar."
 );
-const prePizzaTomateCMuzza = new Producto(
-  "Pre-pizza de tomate c/ muzzarella",
-  "$1000.00",
-  "Pizza cubierta c/tomate y muzzarella, pre cocinada lista para hornear y disfrutar."
-);
+const prePizzaTomateCMuzza = new Producto("Próximamente", "$0", ".");
 const prePizzaCebolla = new Producto(
   "Pre-pizza de Cebolla",
-  "$1200.00",
+  "$1500.00",
   "Pizza con cebolla, pre cocinada lista para hornear y disfrutar."
 );
 const pizzetas = new Producto(
@@ -176,32 +172,32 @@ const pizzetasCMuzza = new Producto(
 );
 const muzzarella = new Producto(
   "Pizza de Muzzarella",
-  "$5500.00",
+  "$6000.00",
   "Tradicional pizza de muzzarella con aceitunas."
 );
 const jamonYmorrones = new Producto(
   "Pizza de jamón y morrones",
-  "$8000.00",
+  "$8500.00",
   " Exquisita pizza con jamón y morrones asados, una combinación clásica con muzzarella."
 );
 const empCarneHorno = new Producto(
   "Empanada de Carne al horno",
-  "$700.00",
+  "$750.00",
   "Empanada de carne con abundante relleno, hechas con huevo y aceitunas.<br> Cocida al horno."
 );
 const empCarneFrita = new Producto(
   "Empanada frita de Carne",
-  "$700.00",
+  "$750.00",
   "Empanada frita de carne con abundante relleno, hechas con huevo y aceitunas."
 );
 const empJyQ = new Producto(
   "Empanada de jamón y queso",
-  "$700.00",
+  "$750.00",
   "Clásicas empanadas rellenas de jamón, queso y muzzarella."
 );
 const empPolloHorno = new Producto(
   "Empanada de pollo al horno",
-  "$700.00",
+  "$750.00",
   "Jugosa empanada de pollo al horno con abundante relleno."
 );
 const tostado = new Producto(
@@ -211,17 +207,17 @@ const tostado = new Producto(
 );
 const pDePapa = new Producto(
   "Pastel de papa",
-  "$2500.00",
+  "$2800.00",
   "Pastel de papa relleno de carne."
 );
 const tortillaDePapa = new Producto(
   "Tortilla de papa",
-  "$2500.00",
+  "$4000.00",
   "Tortilla rellena de jamón y queso."
 );
 const milaCFritas = new Producto(
   "Milanesa c/ papas fritas",
-  "$2500.00",
+  "$4900.00",
   "Milanesa de carne con un acompañamiento de papas fritas."
 );
 

@@ -45,27 +45,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Actualizar la imagen principal según el valor del botón
       switch (button.value) {
-        case "ingles":
-          imgPrincipal.src = "src/fotosPrueba/tortilla2.jpg";
-          botonFotoPrincipal.href = "pedidos.html";
+        case "tostado":
+          imgPrincipal.src = "src/fotosPrueba/tostado.jpg";
+          botonFotoPrincipal.href = "pedidos.html#p12";
           break;
-        case "limon":
+        case "pastPapa":
           imgPrincipal.src = "src/fotosPrueba/pastelDePapa.jpg";
-          botonFotoPrincipal.href = "pedidos.html";
+          botonFotoPrincipal.href = "pedidos.html#p13";
           break;
-        case "marmolado":
+        case "tortilla":
           imgPrincipal.src = "src/fotosPrueba/tortilla.jpg";
-          botonFotoPrincipal.href = "pedidos.html";
+          botonFotoPrincipal.href = "pedidos.html#p14";
           break;
-        case "naranja":
+        case "empanadaPollo":
           imgPrincipal.src = "src/fotosPrueba/pollo.jpg";
           botonFotoPrincipal.href = "pedidos.html#p11";
           break;
-        case "vainilla":
+        case "empanadaJYQ":
           imgPrincipal.src = "src/fotosPrueba/jyq.jpg";
           botonFotoPrincipal.href = "pedidos.html#p10";
           break;
-        case "chocolate":
+        case "empanadaFrita":
           imgPrincipal.src = "src/fotosPrueba/frita.jpg";
           botonFotoPrincipal.href = "pedidos.html#p9";
           break;

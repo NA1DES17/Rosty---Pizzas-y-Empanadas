@@ -205,9 +205,24 @@ const empPolloHorno = new Producto(
   "Jugosa empanada de pollo al horno con abundante relleno."
 );
 const tostado = new Producto(
-  "Tostado de jamón y queso.",
+  "Tostado de jamón y queso",
   "$2500.00",
   "Tostado caliente relleno de jamón y queso, hecho con pan casero."
+);
+const pDePapa = new Producto(
+  "Pastel de papa",
+  "$2500.00",
+  "Pastel de papa relleno de carne."
+);
+const tortillaDePapa = new Producto(
+  "Tortilla de papa",
+  "$2500.00",
+  "Tortilla rellena de jamón y queso."
+);
+const milaCFritas = new Producto(
+  "Milanesa c/ papas fritas",
+  "$2500.00",
+  "Milanesa de carne con un acompañamiento de papas fritas."
 );
 
 const listaProductos = [
@@ -223,5 +238,8 @@ const listaProductos = [
   empJyQ,
   empPolloHorno,
   tostado,
+  pDePapa,
+  tortillaDePapa,
+  milaCFritas,
 ];
 const valores = [];

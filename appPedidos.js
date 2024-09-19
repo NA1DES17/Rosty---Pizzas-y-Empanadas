@@ -154,7 +154,6 @@ const prePizzaTomate = new Producto(
   "$1200.00",
   "Pizza cubierta c/tomate, pre cocinada lista para hornear y disfrutar."
 );
-const prePizzaTomateCMuzza = new Producto("Próximamente", "$0", ".");
 const prePizzaCebolla = new Producto(
   "Pre-pizza de Cebolla",
   "$1500.00",
@@ -222,23 +221,22 @@ const milaCFritas = new Producto(
 );
 const pastafrola = new Producto(
   "Pastafrola",
-  "$100.00",
+  "$1500.00",
   "Descripción pastafrola."
 );
 const alfMaicena = new Producto(
   "Alfajor grande de maicena",
-  "$100.00",
+  "$2000.00",
   "Descripción alfajor de maicena - Medida."
 );
 const tortaDeRicota = new Producto(
   "Torta de ricota",
-  "$100.00",
+  "$2000.00",
   "Descripción torta de ricota."
 );
 
 const listaProductos = [
-  // prePizzaTomate,
-  prePizzaTomateCMuzza,
+  prePizzaTomate,
   prePizzaCebolla, //falta foto
   muzzarella, //falta foto
   jamonYmorrones, //falta foto

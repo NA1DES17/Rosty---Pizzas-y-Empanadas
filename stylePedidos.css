@@ -209,7 +209,7 @@ body {
   margin-bottom: 8%;
 }
 .productInfo p {
-  font-family: "Monserrat", sans-serif;
+  /* font-family: "Monserrat", sans-serif; */
   color: var(--colorP);
   padding: 2%;
 }

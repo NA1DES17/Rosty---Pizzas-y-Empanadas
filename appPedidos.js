@@ -237,7 +237,7 @@ const tortaDeRicota = new Producto(
 );
 
 const listaProductos = [
-  prePizzaTomate,
+  // prePizzaTomate,
   prePizzaTomateCMuzza,
   prePizzaCebolla, //falta foto
   muzzarella, //falta foto

@@ -220,6 +220,21 @@ const milaCFritas = new Producto(
   "$4900.00",
   "Milanesa de carne con un acompañamiento de papas fritas."
 );
+const pastafrola = new Producto(
+  "Pastafrola",
+  "$100.00",
+  "Descripción pastafrola."
+);
+const alfMaicena = new Producto(
+  "Alfajor grande de maicena",
+  "$100.00",
+  "Descripción alfajor de maicena - Medida."
+);
+const tortaDeRicota = new Producto(
+  "Torta de ricota",
+  "$100.00",
+  "Descripción torta de ricota."
+);
 
 const listaProductos = [
   prePizzaTomate,
@@ -237,5 +252,8 @@ const listaProductos = [
   pDePapa,
   tortillaDePapa,
   milaCFritas,
+  pastafrola,
+  alfMaicena,
+  tortaDeRicota,
 ];
 const valores = [];

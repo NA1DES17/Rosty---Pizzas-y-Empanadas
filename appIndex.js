@@ -47,27 +47,27 @@ document.addEventListener("DOMContentLoaded", function () {
       switch (button.value) {
         case "tostado":
           imgPrincipal.src = "src/fotosPrueba/tostado.jpg";
-          botonFotoPrincipal.href = "pedidos.html#p12";
+          botonFotoPrincipal.href = "pedidos.html#p11";
           break;
         case "pastPapa":
           imgPrincipal.src = "src/fotosPrueba/pastelDePapa.jpg";
-          botonFotoPrincipal.href = "pedidos.html#p13";
+          botonFotoPrincipal.href = "pedidos.html#p12";
           break;
         case "tortilla":
           imgPrincipal.src = "src/fotosPrueba/tortilla.jpg";
-          botonFotoPrincipal.href = "pedidos.html#p14";
+          botonFotoPrincipal.href = "pedidos.html#p13";
           break;
         case "empanadaPollo":
           imgPrincipal.src = "src/fotosPrueba/pollo.jpg";
-          botonFotoPrincipal.href = "pedidos.html#p11";
+          botonFotoPrincipal.href = "pedidos.html#p10";
           break;
         case "empanadaJYQ":
           imgPrincipal.src = "src/fotosPrueba/jyq.jpg";
-          botonFotoPrincipal.href = "pedidos.html#p10";
+          botonFotoPrincipal.href = "pedidos.html#p9";
           break;
         case "empanadaFrita":
           imgPrincipal.src = "src/fotosPrueba/frita.jpg";
-          botonFotoPrincipal.href = "pedidos.html#p9";
+          botonFotoPrincipal.href = "pedidos.html#p8";
           break;
       }
     });

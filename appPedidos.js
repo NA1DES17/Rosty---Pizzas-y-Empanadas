@@ -222,17 +222,17 @@ const milaCFritas = new Producto(
 const pastafrola = new Producto(
   "Pastafrola",
   "$1500.00",
-  "Descripción pastafrola."
+  "Masa esponjosa, rellena con membrillo derretido y tiras de masa decorativas."
 );
 const alfMaicena = new Producto(
   "Alfajor grande de maicena",
   "$2000.00",
-  "Descripción alfajor de maicena - Medida."
+  "Alfajor gigante, con tapas de maicena y abundante dulce de leche, recubierto con coco rallado."
 );
 const tortaDeRicota = new Producto(
-  "Torta de ricota",
+  "Tarta de ricota",
   "$2000.00",
-  "Descripción torta de ricota."
+  "Postre tradicional de la cocina argentina, suave, cremoso y ligero, ideal para acompañar tu merienda."
 );
 
 const listaProductos = [

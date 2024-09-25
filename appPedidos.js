@@ -255,3 +255,29 @@ const listaProductos = [
   tortaDeRicota,
 ];
 const valores = [];
+
+/*----------------------------------------------------------------------------*/
+document.addEventListener("DOMContentLoaded", function () {
+    // Obtenemos el fragmento del URL (lo que sigue al #)
+    let hash = window.location.hash;
+
+    // Si hay un hash presente (ej: #p8)
+    if (hash) {
+        // Limpiar el hash y obtener solo el ID
+        let cleanHash = hash.substring(1);
+
+        // Cambiar la URL a una más amigable sin el hash
+        let newUrl = window.location.pathname + '/' + cleanHash;
+        history.replaceState(null, null, newUrl);
+
+        // Aquí puedes agregar la lógica para mostrar o cargar el contenido del ID
+        // Ejemplo: mostrar o resaltar el pedido específico
+        mostrarPedido(cleanHash);
+    }
+});
+
+function mostrarPedido(idPedido) {
+    // Lógica para cargar o mostrar el pedido correspondiente
+    // Puedes hacer una consulta o búsqueda en tu base de datos o contenido
+    console.log("Mostrando detalles del pedido: " + idPedido);
+}

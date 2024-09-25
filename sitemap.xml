@@ -9,17 +9,12 @@
 
 <url>
   <loc>https://rosty.com.ar/</loc>
-  <lastmod>2024-09-21T14:24:33+00:00</lastmod>
+  <lastmod>2024-09-23T14:18:52+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://rosty.com.ar/index.html</loc>
-  <lastmod>2024-09-21T14:24:33+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://rosty.com.ar/pedidos.html</loc>
-  <lastmod>2024-09-21T14:24:33+00:00</lastmod>
+  <loc>https://rosty.com.ar/pedidos</loc>
+  <lastmod>2024-09-23T01:28:10+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 

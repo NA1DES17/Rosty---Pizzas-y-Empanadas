@@ -148,6 +148,33 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 // --------------Botones y display---------------
 
+// -------------- Sheet -------------------------
+// URL de la hoja de cálculo
+const spreadsheetId = "18QD-WU3iNJGlPzmzfvtpmSbA_ShesBEe9-TLRfHtOo4"; // Reemplaza por tu ID
+const apiKey = "AIzaSyCy2l1z9kQ6OeurD9096JX7R8BahergP5Y"; // Reemplaza por tu clave API
+
+const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/A2:B19?key=${apiKey}`;
+
+let productos = [];
+
+fetch(url)
+  .then((response) => response.json())
+  .then((data) => {
+    const rows = data.values;
+
+    // Iterar sobre las filas de la hoja de cálculo
+    rows.forEach((row) => {
+      const nombreProducto = row[0];
+      const precioProducto = `$${row[1]}`;
+
+      const aux = [nombreProducto, precioProducto];
+      productos.push(aux);
+    });
+    console.log(productos[0][1]);
+  })
+  .catch((error) => console.error("Error al obtener datos:", error));
+// -------------- Sheet -------------------------
+
 // --------------Productos---------------
 const prePizzaTomate = new Producto(
   "Pre-pizza de tomate",
@@ -258,26 +285,26 @@ const valores = [];
 
 /*----------------------------------------------------------------------------*/
 document.addEventListener("DOMContentLoaded", function () {
-    // Obtenemos el fragmento del URL (lo que sigue al #)
-    let hash = window.location.hash;
+  // Obtenemos el fragmento del URL (lo que sigue al #)
+  let hash = window.location.hash;
 
-    // Si hay un hash presente (ej: #p8)
-    if (hash) {
-        // Limpiar el hash y obtener solo el ID
-        let cleanHash = hash.substring(1);
+  // Si hay un hash presente (ej: #p8)
+  if (hash) {
+    // Limpiar el hash y obtener solo el ID
+    let cleanHash = hash.substring(1);
 
-        // Cambiar la URL a una más amigable sin el hash
-        let newUrl = window.location.pathname + '/' + cleanHash;
-        history.replaceState(null, null, newUrl);
+    // Cambiar la URL a una más amigable sin el hash
+    let newUrl = window.location.pathname + "/" + cleanHash;
+    history.replaceState(null, null, newUrl);
 
-        // Aquí puedes agregar la lógica para mostrar o cargar el contenido del ID
-        // Ejemplo: mostrar o resaltar el pedido específico
-        mostrarPedido(cleanHash);
-    }
+    // Aquí puedes agregar la lógica para mostrar o cargar el contenido del ID
+    // Ejemplo: mostrar o resaltar el pedido específico
+    mostrarPedido(cleanHash);
+  }
 });
 
 function mostrarPedido(idPedido) {
-    // Lógica para cargar o mostrar el pedido correspondiente
-    // Puedes hacer una consulta o búsqueda en tu base de datos o contenido
-    console.log("Mostrando detalles del pedido: " + idPedido);
+  // Lógica para cargar o mostrar el pedido correspondiente
+  // Puedes hacer una consulta o búsqueda en tu base de datos o contenido
+  console.log("Mostrando detalles del pedido: " + idPedido);
 }

@@ -1,5 +1,5 @@
 import Producto from "./producto.js";
-
+import {getProductos} from "./sheet.js";
 //--------------Menú hamburguesa---------------
 document.getElementById("menu-icon").addEventListener("click", function () {
   const navLinks = document.getElementById("nav-links");
@@ -148,121 +148,122 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 // --------------Botones y display---------------
 
-// -------------- Sheet -------------------------
-// URL de la hoja de cálculo
-const spreadsheetId = "18QD-WU3iNJGlPzmzfvtpmSbA_ShesBEe9-TLRfHtOo4"; // Reemplaza por tu ID
-const apiKey = "AIzaSyCy2l1z9kQ6OeurD9096JX7R8BahergP5Y"; // Reemplaza por tu clave API
+let listaProductos = [];
 
-const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/A2:B19?key=${apiKey}`;
+document.addEventListener("DOMContentLoaded", async () => {
+  try {
+    // Obtener los productos de la hoja de cálculo
+    listaProductos = await getProductos();
 
-let productos = [];
+    // Actualizar la interfaz con los productos obtenidos
+    actualizarInterfaz();
 
-fetch(url)
-  .then((response) => response.json())
-  .then((data) => {
-    const rows = data.values;
+    // ... (resto del código existente)
+  } catch (error) {
+    console.error("Error al cargar los productos:", error);
+  }
+});
+function actualizarInterfaz() {
+  const titulos = document.querySelectorAll(".title");
+  const precios = document.querySelectorAll(".price");
+  const descripciones = document.querySelectorAll(".description");
 
-    // Iterar sobre las filas de la hoja de cálculo
-    rows.forEach((row) => {
-      const nombreProducto = row[0];
-      const precioProducto = `$${row[1]}`;
-
-      const aux = [nombreProducto, precioProducto];
-      productos.push(aux);
-    });
-    console.log(productos[0][1]);
-  })
-  .catch((error) => console.error("Error al obtener datos:", error));
-// -------------- Sheet -------------------------
+  listaProductos.forEach((producto, index) => {
+    if (titulos[index]) titulos[index].innerHTML = producto.sabor;
+    if (precios[index]) precios[index].innerHTML = producto.precio;
+    // Nota: Las descripciones no están disponibles en la hoja de cálculo,
+    // así que esta parte se omite o se podría dejar en blanco
+  });
+}
 
 // --------------Productos---------------
 const prePizzaTomate = new Producto(
   "Pre-pizza de tomate",
-  "$1200.00",
+  "$00.00",
   "Pizza cubierta c/tomate, pre cocinada lista para hornear y disfrutar."
 );
 const prePizzaCebolla = new Producto(
   "Pre-pizza de Cebolla",
-  "$1500.00",
+  "$00.00",
   "Pizza con cebolla, pre cocinada lista para hornear y disfrutar."
 );
 const pizzetas = new Producto(
   "Pizzetas",
-  "$1000.00",
+  "$00.00",
   "Mini pizzas listas para disfrutar con salsa de tomate, ideales para añadir tus ingredientes preferidos."
 );
 const pizzetasCMuzza = new Producto(
   "Pizzetas c/muzza",
-  "$1500.00",
+  "$00.00",
   "Mini pizzas listas para disfrutar con salsa de tomate, con la cantidad ideal de muzzarella."
 );
 const muzzarella = new Producto(
   "Pizza de Muzzarella",
-  "$6000.00",
+  "$00.00",
   "Tradicional pizza de muzzarella con aceitunas."
 );
 const jamonYmorrones = new Producto(
   "Pizza de jamón y morrones",
-  "$8500.00",
+  "$00.00",
   " Exquisita pizza con jamón y morrones asados, una combinación clásica con muzzarella."
 );
 const empCarneHorno = new Producto(
   "Empanada de Carne al horno",
-  "$750.00",
+  "$00.00",
   "Empanada de carne con abundante relleno, hechas con huevo y aceitunas.<br> Cocida al horno."
 );
 const empCarneFrita = new Producto(
   "Empanada frita de Carne",
-  "$750.00",
+  "$00.00",
   "Empanada frita de carne con abundante relleno, hechas con huevo y aceitunas."
 );
 const empJyQ = new Producto(
   "Empanada de jamón y queso",
-  "$750.00",
+  "$00.00",
   "Clásicas empanadas rellenas de jamón, queso y muzzarella."
 );
 const empPolloHorno = new Producto(
   "Empanada de pollo al horno",
-  "$750.00",
+  "$00.00",
   "Jugosa empanada de pollo al horno con abundante relleno."
 );
 const tostado = new Producto(
   "Tostado de jamón y queso",
-  "$2500.00",
+  "$00.00",
   "Tostado caliente relleno de jamón y queso, hecho con pan casero."
 );
 const pDePapa = new Producto(
   "Pastel de papa",
-  "$2800.00",
+  "$00.00",
   "Pastel de papa relleno de carne."
 );
 const tortillaDePapa = new Producto(
   "Tortilla de papa",
-  "$4000.00",
+  "$00.00",
   "Tortilla rellena de jamón y queso."
 );
 const milaCFritas = new Producto(
   "Milanesa c/ papas fritas",
-  "$4900.00",
+  "$00.00",
   "Milanesa de carne con un acompañamiento de papas fritas."
 );
 const pastafrola = new Producto(
   "Pastafrola",
-  "$1500.00",
+  "$00.00",
   "Masa esponjosa, rellena con membrillo derretido y tiras de masa decorativas."
 );
 const alfMaicena = new Producto(
   "Alfajor grande de maicena",
-  "$2000.00",
+  "$00.00",
   "Alfajor gigante, con tapas de maicena y abundante dulce de leche, recubierto con coco rallado."
 );
 const tortaDeRicota = new Producto(
   "Tarta de ricota",
-  "$2000.00",
+  "$00.00",
   "Postre tradicional de la cocina argentina, suave, cremoso y ligero, ideal para acompañar tu merienda."
 );
 
-const listaProductos = [
+listaProductos = [
   prePizzaTomate,
   prePizzaCebolla, //falta foto
   muzzarella, //falta foto

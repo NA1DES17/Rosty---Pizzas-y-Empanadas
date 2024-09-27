@@ -33,11 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Configura la imagen principal inicial
   imgPrincipal.src = "src/fotosPrueba/frita.jpg";
-  imgPrincipal.srcset = `
-    src/fotosPrueba/400x300/frita.jpg 320w,
-    src/fotosPrueba/800x600/frita.jpg 768w,
-    src/fotosPrueba/frita.jpg 1200w`;
-  imgPrincipal.sizes = "(max-width: 768px) 100vw, (min-width: 768px) 50vw";
 
   // Añade el evento de clic a cada botón de la galería
   opButtons.forEach((button) => {
@@ -51,57 +46,28 @@ document.addEventListener("DOMContentLoaded", function () {
       // Actualizar la imagen principal según el valor del botón
       switch (button.value) {
         case "tostado":
-          //---
-          imgPrincipal.src = "src/fotosPrueba/tostado.jpg.jpg";
-          imgPrincipal.srcset = `
-            src/fotosPrueba/400x300/tostado.jpg 320w,
-            src/fotosPrueba/800x600/tostado.jpg 768w,
-            src/fotosPrueba/tostado.jpg 1200w`;
-          botonFotoPrincipal.href = "pedidos#p11";
+          imgPrincipal.src = "src/fotosPrueba/tostado.jpg";
+          botonFotoPrincipal.href = "pedidos.html#p11";
           break;
         case "pastPapa":
-          //---
-          imgPrincipal.src = "src/fotosPrueba/pastelDePapa.jpg.jpg";
-          imgPrincipal.srcset = `
-            src/fotosPrueba/400x300/pastelDePapa.jpg 320w,
-            src/fotosPrueba/800x600/pastelDePapa.jpg 768w,
-            src/fotosPrueba/pastelDePapa.jpg 1200w`;
-          botonFotoPrincipal.href = "pedidos#p12";
+          imgPrincipal.src = "src/fotosPrueba/pastelDePapa.jpg";
+          botonFotoPrincipal.href = "pedidos.html#p12";
           break;
         case "tortilla":
-          //---
-          imgPrincipal.src = "src/fotosPrueba/tortilla.jpg.jpg";
-          imgPrincipal.srcset = `
-                      src/fotosPrueba/400x300/tortilla.jpg 320w,
-                      src/fotosPrueba/800x600/tortilla.jpg 768w,
-                      src/fotosPrueba/tortilla.jpg 1200w`;
-          botonFotoPrincipal.href = "pedidos#p13";
+          imgPrincipal.src = "src/fotosPrueba/tortilla.jpg";
+          botonFotoPrincipal.href = "pedidos.html#p13";
           break;
         case "empanadaPollo":
-          imgPrincipal.src = "src/fotosPrueba/pollo.jpg.jpg";
-          imgPrincipal.srcset = `
-                      src/fotosPrueba/400x300/pollo.jpg 320w,
-                      src/fotosPrueba/800x600/pollo.jpg 768w,
-                      src/fotosPrueba/pollo.jpg 1200w`;
-          botonFotoPrincipal.href = "pedidos#p10";
+          imgPrincipal.src = "src/fotosPrueba/pollo.jpg";
+          botonFotoPrincipal.href = "pedidos.html#p10";
           break;
         case "empanadaJYQ":
-          //---
-          imgPrincipal.src = "src/fotosPrueba/jyq.jpg.jpg";
-          imgPrincipal.srcset = `
-                      src/fotosPrueba/400x300/jyq.jpg 320w,
-                      src/fotosPrueba/800x600/jyq.jpg 768w,
-                      src/fotosPrueba/jyq.jpg 1200w`;
-          botonFotoPrincipal.href = "pedidos#p9";
+          imgPrincipal.src = "src/fotosPrueba/jyq.jpg";
+          botonFotoPrincipal.href = "pedidos.html#p9";
           break;
         case "empanadaFrita":
-          //---
-          imgPrincipal.src = "src/fotosPrueba/frita.jpg.jpg";
-          imgPrincipal.srcset = `
-                      src/fotosPrueba/400x300/frita.jpg 320w,
-                      src/fotosPrueba/800x600/frita.jpg 768w,
-                      src/fotosPrueba/frita.jpg 1200w`;
-          botonFotoPrincipal.href = "pedidos#p8";
+          imgPrincipal.src = "src/fotosPrueba/frita.jpg";
+          botonFotoPrincipal.href = "pedidos.html#p8";
           break;
       }
     });

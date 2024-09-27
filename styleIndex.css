@@ -208,13 +208,15 @@ body {
 }
 .videoContainer {
   width: 94vw;
-  height: 54vw;
-  max-width: 804px;
-  max-height: 452px;
+  /* height: 83vh; */
+  height: 44vh;
+  /* max-width: 804px; */
+  /* max-height: 452px; */
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #fbe5b3;
+  border-radius: 12px;
 }
 /* ---------galeria--------- */
 .galeria {
@@ -230,7 +232,7 @@ body {
 .imgPrincipal {
   margin-bottom: 4vh;
   border-radius: 12px;
-   /*border: solid 2px green; */
+  /*border: solid 2px green; */
   width: 85vw;
 }
 .opciones {
@@ -308,6 +310,34 @@ iframe {
   margin: 12px;
   margin-bottom: 3vh;
 }
+.youtube-video {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  width: 85vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.youtube-video img {
+  max-width: 100%;
+  height: auto;
+  width: 100vw;
+  height: 35vh;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 68px;
+  height: 48px;
+  background: url(src/iconos/youtube-play-button.gif) no-repeat;
+  background-size: 68px 48px;
+}
+
 /* ---------How to Works--------- */
 /* ---------Opiniones--------- */
 #testimonials {
@@ -493,6 +523,38 @@ footer {
     text-align: center;
     color: var(--colorTexto);
   }
+  iframe {
+    height: 70vh;
+  }
+  .videoContainer {
+    width: 104vw;
+    height: 80vh;
+    width: 62vw;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fbe5b3;
+    border-radius: 12px;
+    /* border: solid 1px red; */
+  }
+  .youtube-video {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    width: 60vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .youtube-video img {
+    /* height: auto; */
+    width: 100vw;
+    height: 70vh;
+    border-radius: 10px;
+  }
   #benefits {
     display: flex;
     flex-direction: column;
@@ -512,6 +574,7 @@ footer {
     text-align: center;
     border-radius: 4px;
   }
+
   /* ---------galeria--------- */
   .galeria {
     width: 62vw;

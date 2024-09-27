@@ -74,3 +74,19 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 // --------------Galeria---------------
+
+document.querySelectorAll(".youtube-video").forEach(function (video) {
+  video.addEventListener("click", function () {
+    var iframe = document.createElement("iframe");
+    iframe.setAttribute(
+      "src",
+      "https://www.youtube.com/embed/" + this.dataset.id + "?autoplay=1"
+    );
+    iframe.setAttribute("frameborder", "0");
+    iframe.setAttribute("allowfullscreen", "1");
+    iframe.setAttribute("width", "560");
+    iframe.setAttribute("height", "315");
+    this.innerHTML = ""; // Limpiamos el contenedor
+    this.appendChild(iframe); // Agregamos el iframe
+  });
+});

@@ -178,12 +178,12 @@ function actualizarInterfaz() {
 
 // --------------Productos---------------
 const prePizzaTomate = new Producto(
-  "Pre-pizza de tomate",
+  "Prepizza de tomate",
   "$00.00",
   "Pizza cubierta c/tomate, pre cocinada lista para hornear y disfrutar."
 );
 const prePizzaCebolla = new Producto(
-  "Pre-pizza de Cebolla",
+  "Prepizza de Cebolla",
   "$00.00",
   "Pizza con cebolla, pre cocinada lista para hornear y disfrutar."
 );
@@ -253,7 +253,7 @@ const pastafrola = new Producto(
   "Masa esponjosa, rellena con membrillo derretido y tiras de masa decorativas."
 );
 const alfMaicena = new Producto(
-  "Alfajor grande de maicena",
+  "Alfajor de maicena grande",
   "$00.00",
   "Alfajor gigante, con tapas de maicena y abundante dulce de leche, recubierto con coco rallado."
 );
@@ -283,26 +283,6 @@ listaProductos = [
   tortaDeRicota,
 ];
 const valores = [];
-
-/*----------------------------------------------------------------------------*/
-document.addEventListener("DOMContentLoaded", function () {
-  // Obtenemos el fragmento del URL (lo que sigue al #)
-  let hash = window.location.hash;
-
-  // Si hay un hash presente (ej: #p8)
-  if (hash) {
-    // Limpiar el hash y obtener solo el ID
-    let cleanHash = hash.substring(1);
-
-    // Cambiar la URL a una más amigable sin el hash
-    let newUrl = window.location.pathname + "/" + cleanHash;
-    history.replaceState(null, null, newUrl);
-
-    // Aquí puedes agregar la lógica para mostrar o cargar el contenido del ID
-    // Ejemplo: mostrar o resaltar el pedido específico
-    mostrarPedido(cleanHash);
-  }
-});
 
 function mostrarPedido(idPedido) {
   // Lógica para cargar o mostrar el pedido correspondiente

@@ -1,0 +1,11 @@
+# Activar el motor de reescritura
+RewriteEngine On
+
+# Redirigir la página principal sin 'index.html'
+RewriteCond %{THE_REQUEST} /index\.html [NC]
+RewriteRule ^(.*)index\.html$ /$1 [R=301,L]
+
+# Quitar el '.html' de todas las URLs (incluida 'pedidos.html')
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^/]+)$ $1.html [L]
+

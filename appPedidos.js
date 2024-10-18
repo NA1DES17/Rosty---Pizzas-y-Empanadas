@@ -295,3 +295,8 @@ function mostrarPedido(idPedido) {
   // Puedes hacer una consulta o búsqueda en tu base de datos o contenido
   console.log("Mostrando detalles del pedido: " + idPedido);
 }
+
+//Función actualizar fecha de precios
+import {actualizarFecha} from "./precioActual.js";
+const fecha = document.getElementById("precioActual");
+fecha.innerHTML = await actualizarFecha();

@@ -4,14 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-W11KCKJ6ND"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-W11KCKJ6ND"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-W11KCKJ6ND');
-</script>
+      gtag("config", "G-W11KCKJ6ND");
+    </script>
     <!-- My style -->
     <link rel="stylesheet" href="stylePedidos.css" />
     <link
@@ -658,6 +663,50 @@
         <div class="imgContainer">
           <picture>
             <source
+              srcset="src/fotosTarjetas/SandwichMilanesa.webp"
+              type="image/webp"
+            />
+            <!-- Imagen alternativa en formato JPEG o PNG -->
+            <img
+              src="src/fotosTarjetas/SandwichMilanesa.jpg"
+              loading="lazy"
+              alt="Sándwich de milanesa completo"
+              class="card-img"
+            /> </picture
+          ><!-- MODIFICABLE -->
+        </div>
+        <!-- text -->
+        <div class="productInfo">
+          <h2><span class="title">Sándwich de milanesa completo</span></h2>
+          <p class="description">
+            Sándwich de milanesa de carne con lechuga, tomate, jamón y queso,
+            con el más rico pan.
+          </p>
+        </div>
+        <!-- footer -->
+        <div class="buttonFooter">
+          <div class="price"><p>$4000</p></div>
+          <button
+            class="boton plus"
+            aria-label="Aumentar cantidad del pedido"
+          ></button>
+
+          <input type="text" class="display" placeholder="Cant." disabled />
+          <button
+            class="boton del"
+            id="-"
+            aria-label="Disminuir cantidad del pedido"
+          ></button>
+        </div>
+      </div>
+      <!-------- /P15 -------->
+
+      <!-------- P16 -------->
+      <div class="tarjeta" id="p16">
+        <!-- Img -->
+        <div class="imgContainer">
+          <picture>
+            <source
               srcset="src/fotosTarjetas/pastafrola.webp"
               type="image/webp"
             />
@@ -694,9 +743,9 @@
           ></button>
         </div>
       </div>
-      <!-------- /P15 -------->
-      <!-------- P16 -------->
-      <div class="tarjeta" id="p16">
+      <!-------- /P16 -------->
+      <!-------- P17 -------->
+      <div class="tarjeta" id="p17">
         <!-- Img -->
         <div class="imgContainer">
           <picture>
@@ -737,9 +786,9 @@
           ></button>
         </div>
       </div>
-      <!-------- /P16 -------->
-      <!-------- P17 -------->
-      <div class="tarjeta" id="p17">
+      <!-------- /P17 -------->
+      <!-------- P18 -------->
+      <div class="tarjeta" id="p18">
         <!-- Img -->
         <div class="imgContainer">
           <picture>
@@ -780,7 +829,7 @@
           ></button>
         </div>
       </div>
-      <!-------- /P17 -------->
+      <!-------- /P18 -------->
 
       <!-------- Pedido -------->
       <div id="pedido" class="container">

@@ -262,6 +262,11 @@ const tortaDeRicota = new Producto(
   "$00.00",
   "Postre tradicional de la cocina argentina, suave, cremoso y ligero, ideal para acompañar tu merienda."
 );
+const sangucheMila = new Producto(
+  "Sándwich de milanesa completo",
+  "$00.00",
+  "Sándwich de milanesa de carne con lechuga, tomate, jamón y queso, con el más rico pan."
+);
 
 listaProductos = [
   prePizzaTomate,
@@ -278,6 +283,7 @@ listaProductos = [
   pDePapa,
   tortillaDePapa,
   milaCFritas,
+  sangucheMila,
   pastafrola,
   alfMaicena,
   tortaDeRicota,

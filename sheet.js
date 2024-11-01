@@ -3,7 +3,7 @@ export async function getProductos() {
   const spreadsheetId = "18QD-WU3iNJGlPzmzfvtpmSbA_ShesBEe9-TLRfHtOo4";
   const apiKey = "AIzaSyCy2l1z9kQ6OeurD9096JX7R8BahergP5Y";
 
-  const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/A2:B19?key=${apiKey}`;
+  const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/A2:B20?key=${apiKey}`;
 
   try {
     const response = await fetch(url);

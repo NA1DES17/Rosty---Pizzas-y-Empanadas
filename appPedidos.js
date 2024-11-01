@@ -267,6 +267,11 @@ const sangucheMila = new Producto(
   "$00.00",
   "Sándwich de milanesa de carne con lechuga, tomate, jamón y queso, con el más rico pan."
 );
+const polloAlHorno = new Producto(
+  "Pollo al horno c/papas",
+  "$00.00",
+  "Pieza de pata y muslo acompañado con papas bien doradas."
+);
 
 listaProductos = [
   prePizzaTomate,
@@ -283,6 +288,7 @@ listaProductos = [
   pDePapa,
   tortillaDePapa,
   milaCFritas,
+  polloAlHorno,
   sangucheMila,
   pastafrola,
   alfMaicena,
